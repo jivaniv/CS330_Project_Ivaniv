@@ -8,18 +8,33 @@ First I created a state transition FA diagram as demonstrated in the attached PN
 states. I used this chart to write the code for part 1. I used if/else statements to transition between states. The first state is always s0. The states
 change depending on the input as shown in the chart. My access code is 182821 and my locking code is 182824. I created a while loop so that the user can
 continuously input values unless the user enters nothing, which breaks the while loop and ends the code. I hid the user input by using the python package
-getpass. After each if/else block I made sure to add the code continue so that once the state changes the code moves on to the next input. The code ouputs
-unlock when the access code is enter and lock when the locking code is entered. These outputs do not break the code. The user can still input values. 
+getpass. After each if/else block I made sure to add the code continue so that once the state changes the code moves on to the next input. The code outputs
+unlock when the access code is entered and lock when the locking code is entered. These outputs do not break the code. The user can still input values. 
 
+For the second part of the project, I used the package random to generate random numbers and numpy to compute the min/max/avg. I started with an empty 
+countarray to store all of the counts of symbols from each test in this part of the project. I decided to run 100 tests to obtain significant results. The 
+tests are run within a for loop. The code takes some time to run because of this, but I can change it to fewer tests if needed. There is a while loop 
+similar to the one in part 1 inside of the for loop. This while loop runs until the access code is guessed. The random numbers are generated within the 
+while loop (once each loop). The random number is generated, there is a counter for the number of random numbers generated, and the if/else statements 
+decide the state based on the input, and the loop keeps going until the access code is entered. Once the final number of the access code is entered, the 
+loop ends, and the total count of random numbers generated for that single test is added to the count array until all of the tests are completed. After 
+all of the tests, the minimum, maximum, and average number of symbols generated before unlocking are computed by using numpy and the count array. These 
+values are then outputted. 
 
-
-The second file Ivaniv_J_part2.py is the code for part 2 of the project. This code uses a random number generator to determine how many symbols an intruder
-must enter on average to unlock the lock. The same loop containing if/else statements is used as in part 1, but instead of user input, the code generates
-random numbers. After each number, the code checks if the access code (182824) has been entered. This test is repeated 100 times to obtain significant 
-results. The code ouputs the minimum, maximum, and average number of symbols generated before the access code is entered. 
-
-This is an example of my code:
+This is an example of the output for part 2:
 
 The minimum number of symbols generated before unlocking is: 6740
 The maximum number of symbols generated before unlocking is: 5545990
 The average number of symbols generated before unlocking is: 907279.0
+
+Findings:
+I estimated that it would take about 70 days maximum to unlock the lock if one has to wait 1 second after each number is pressed on the keypad. My math is
+that the access code is 6 digits long. There are 10 numbers to choose from in total (0-9). This means there are 10^6 combinations to try. This is 
+1,000,000 combinations of 6 digits. 1,000,000 x 6 is 6,000,000 digits that need to be entered (maximum). 6,000,000 digits x 1 sec each = 6,000,000 seconds 
+to go through all of the possible codes. 6,000,000 seconds is about 70 days. My tests are consistent with my estimation. The average number of symbols 
+generated before unlocking is about 1,000,000 and the maximum number is about 5,500,000 (which is almost the 6,000,000 maximum estimated). 
+
+Ultimately, a 6-digit code is not strong because modern technology can go through all possible combinations in seconds. This project only looked into a 
+human manually guessing the passcode, but if a computer did it it would be much faster. 
+
+
