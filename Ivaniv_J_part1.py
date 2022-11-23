@@ -1,6 +1,6 @@
 import getpass 
 
-state = 's0' #first state is s0 as shown in attached drawing
+state = 's0' #first state is s0 as shown in attached diagram
 while True:
   string = getpass.getpass("Input: ") #hides inputs (doesn't echo inputs)
 
@@ -13,7 +13,7 @@ while True:
       state = 'got1'
     else:
       state = 's0'
-    continue #make sure to continue to next input1
+    continue #make sure to continue to next input
 
   if state == 'got1':
     if string == '8':
