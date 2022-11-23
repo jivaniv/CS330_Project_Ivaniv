@@ -1,11 +1,7 @@
+I created the attached diagram for my finite automata program. I used if/else statements to go through the states in the diagram. For part 1 I used user 
+input, but for part 2 I used a random number generator.
 
-
-
-
-(5 pts) A memo describing what you have done, how you have done it, and your findings. In the memo clearly state what is the language of the FA you have implemented. Also indicate what is the regular expression corresponding to that language. Attach the state transition diagram for the FA.
-Direct the memo to your class instructor.
-
-
+This is an example of my code:
 
 The minimum number of symbols generated before unlocking is: 6740
 The maximum number of symbols generated before unlocking is: 5545990
