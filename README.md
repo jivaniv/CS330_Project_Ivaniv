@@ -1,5 +1,5 @@
 # CS330_Project_Ivaniv
-Julia Ivaniv
+Author: Julia Ivaniv
 
 This repository cosists of two files containing the code for this project, a memo for the professor, a PNG file for the FA state transition diagram, and
 this README file. 
