@@ -3,7 +3,7 @@ Author: Julia Ivaniv
 
 Language: Python
 
-This repository cosists of two files containing the code for this project, a memo for the professor, a PNG file for the FA state transition diagram, and
+This repository consists of two files containing the code for this project, a memo for the professor, a PNG file for the FA state transition diagram, and
 this README file. 
 
 The first file Ivaniv_J_part1.py is the code for part 1 of the project. This code asks for user input so that the user can enter the access code one value
@@ -15,7 +15,7 @@ entered, respectively.
 The second file Ivaniv_J_part2.py is the code for part 2 of the project. This code uses a random number generator to determine how many symbols an intruder
 must enter on average to unlock the lock. The same loop containing if/else statements is used as in part 1, but instead of user input, the code generates
 random numbers. After each number, the code checks if the access code (182824) has been entered. This test is repeated 100 times to obtain significant 
-results. The code ouputs the minimum, maximum, and average number of symbols generated before the access code is entered. 
+results. The code outputs the minimum, maximum, and average number of symbols generated before the access code is entered. 
 
 To run these to .py files in your terminal:
 
