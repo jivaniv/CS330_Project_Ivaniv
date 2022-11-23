@@ -19,6 +19,7 @@ results. The code outputs the minimum, maximum, and average number of symbols ge
 
 To run these to .py files in your terminal:
 
+
 git clone https://github.com/jivaniv/CS330_Project_Ivaniv.git
 
 cd CS330_Project_Ivaniv.git
@@ -27,7 +28,10 @@ python Ivaniv_J_part1.py
 
 python Ivaniv_J_part2.py
 
+
+
 Generate unit test coverage in your terminal:
+
 
 pip install coverage
 
