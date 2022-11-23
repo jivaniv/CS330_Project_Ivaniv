@@ -1,0 +1,25 @@
+To Professor Bistriceanu
+
+I used Python as my programming language for this assignment. 
+I have .py files that can be run in the terminal as so: python Ivaniv_J_part1.py
+(or Ivaniv_J_part2.py)
+
+First I created a state transition FA diagram as demonstrated in the attached PNG file. I created a chart from the diagram to understand the inputs and 
+states. I used this chart to write the code for part 1. I used if/else statements to transition between states. The first state is always s0. The states
+change depending on the input as shown in the chart. My access code is 182821 and my locking code is 182824. I created a while loop so that the user can
+continuously input values unless the user enters nothing, which breaks the while loop and ends the code. I hid the user input by using the python package
+getpass. After each if/else block I made sure to add the code continue so that once the state changes the code moves on to the next input. The code ouputs
+unlock when the access code is enter and lock when the locking code is entered. These outputs do not break the code. The user can still input values. 
+
+
+
+The second file Ivaniv_J_part2.py is the code for part 2 of the project. This code uses a random number generator to determine how many symbols an intruder
+must enter on average to unlock the lock. The same loop containing if/else statements is used as in part 1, but instead of user input, the code generates
+random numbers. After each number, the code checks if the access code (182824) has been entered. This test is repeated 100 times to obtain significant 
+results. The code ouputs the minimum, maximum, and average number of symbols generated before the access code is entered. 
+
+This is an example of my code:
+
+The minimum number of symbols generated before unlocking is: 6740
+The maximum number of symbols generated before unlocking is: 5545990
+The average number of symbols generated before unlocking is: 907279.0
