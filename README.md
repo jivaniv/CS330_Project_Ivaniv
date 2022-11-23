@@ -7,7 +7,7 @@ This repository consists of two files containing the code for this project, a me
 this README file. 
 
 The first file Ivaniv_J_part1.py is the code for part 1 of the project. This code asks for user input so that the user can enter the access code one value
-at a time. After each value, the code run through a series of if/else statements to decide whether the access/locking code has been entered or not. The
+at a time. After each value, the code runs through a series of if/else statements to decide whether the access/locking code has been entered or not. The
 user should only enter integers between 0-9, but if the user inputs any other value the code will just ignore it. The user can enter nothing to exit the
 loop/code. The user input is never echoed. The access code is 182821 and the locking code is 182824. The code returns unlock/lock when these codes are
 entered, respectively.
@@ -31,7 +31,11 @@ Generate unit test coverage in your terminal:
 
 pip install coverage
 
-coverage run Ivaniv_J_part1.py unittest discover or coverage run Ivaniv_J_part2.py unittest discover
+coverage run Ivaniv_J_part1.py unittest discover
+
+coverage report -m
+
+coverage run Ivaniv_J_part2.py unittest discover
 
 coverage report -m
 
